@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="gallery-header">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <h1>Image Gallery</h1>
+    </div>
+
+    <div class="gallery-container">
+        <!-- Filter Buttons -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-category="all">
+                <i class="fas fa-images"></i> All
+            </button>
+            <button class="filter-btn" data-category="nature">
+                <i class="fas fa-leaf"></i> Nature
+            </button>
+            <button class="filter-btn" data-category="urban">
+                <i class="fas fa-city"></i> Urban
+            </button>
+            <button class="filter-btn" data-category="abstract">
+                <i class="fas fa-shapes"></i> Abstract
+            </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Images will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <!-- Close Button -->
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Navigation Buttons -->
+            <button class="lightbox-nav prev" onclick="previousImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Image -->
+            <img id="lightboxImage" src="" alt="Full view" class="lightbox-image">
+
+            <!-- Navigation Buttons -->
+            <button class="lightbox-nav next" onclick="nextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Image Info -->
+            <div class="lightbox-info">
+                <h2 id="lightboxTitle"></h2>
+                <p id="lightboxCaption"></p>
+                <span class="image-counter">
+                    <span id="currentImage">1</span> / <span id="totalImages">1</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

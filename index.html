@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Frontend Developer</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- ========== NAVBAR START ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Name on the left -->
+            <div class="nav-logo">
+                <a href="#home">Soyab👨‍💻</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Hamburger menu icon for mobile (will be styled later) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== NAVBAR END ========== -->
+    
+    
+    <!-- ========== HERO SECTION START ========== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Your name -->
+            <h1 class="hero-title">Hi, I'm Soyab Manihar</h1>
+            
+            <!-- Short intro/tagline -->
+            <p class="hero-subtitle">CSE Student | Web Developer | UI Enthusiast</p>
+            
+            <!-- Brief description -->
+            <p class="hero-description">
+                Welcome to my portfolio! I create beautiful and responsive web experiences.
+            </p>
+            
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="https://github.com/soyab" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/soyabmanihar8/?__pwa=1" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <!-- Call-to-action button -->
+            <button class="cta-button">View My Work</button>
+        </div>
+    </section>
+    <!-- ========== HERO SECTION END ========== -->
+    
+    
+    <!-- ========== ABOUT SECTION START ========== -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <!-- About description -->
+                <div class="about-text">
+                    <p>
+                        Hi! I'm a passionate Computer Science student and web developer with a keen interest in creating beautiful, functional websites that provide exceptional user experiences. I started my coding journey in 2021 and have since developed a strong foundation in web technologies and modern development practices.
+                    </p>
+                    
+                    <p>
+                        When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the developer community through blogs and tutorials. I believe in continuous learning and staying updated with the latest industry trends to deliver cutting-edge solutions.
+                    </p>
+                </div>
+                
+                <!-- Skills section -->
+                <div class="skills-container">
+                    <h3 class="skills-title">My Skills</h3>
+                    
+                    <div class="skills-grid">
+                        <!-- Skill 1 -->
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <h4>HTML5</h4>
+                            <p>Semantic markup & accessibility standards</p>
+                        </div>
+                        
+                        <!-- Skill 2 -->
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <h4>CSS3</h4>
+                            <p>Responsive design & modern animations</p>
+                        </div>
+                        
+                        <!-- Skill 3 -->
+                        <div class="skill-card">
+                            <i class="fab fa-js-square skill-icon"></i>
+                            <h4>JavaScript</h4>
+                            <p>ES6+, DOM manipulation, APIs</p>
+                        </div>
+                        
+                        <!-- Skill 4 -->
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon"></i>
+                            <h4>React</h4>
+                            <p>Component-based development & hooks</p>
+                        </div>
+                        
+                        <!-- Skill 5 -->
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <h4>Git & GitHub</h4>
+                            <p>Version control & collaboration workflows</p>
+                        </div>
+                        
+                        <!-- Skill 6 -->
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h4>Databases</h4>
+                            <p>SQL & NoSQL fundamentals & design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== ABOUT SECTION END ========== -->
+    
+    
+    <!-- ========== PROJECTS SECTION START ========== -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                
+                <!-- PROJECT 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-calculator project-icon"></i>
+                    </div>
+                    
+                    <div class="project-body">
+                        <h3 class="project-title">Advanced Calculator</h3>
+                        
+                        <p class="project-description">
+                            A fully functional calculator web app with support for basic operations, keyboard input, and history tracking. Features include decimal calculations, error handling, and a clean dark-themed UI with glassmorphism effects.
+                        </p>
+                        
+                        <!-- Technologies used -->
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        
+                        <!-- Project links -->
+                        <div class="project-links">
+                            <a href="calculator/index.html" class="project-link">
+                                <i class="fas fa-play"></i> Try It
+                            </a>
+                            <a href="https://github.com" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-list-check project-icon"></i>
+                    </div>
+                    
+                    <div class="project-body">
+                        <h3 class="project-title">Smart Todo Manager</h3>
+                        
+                        <p class="project-description">
+                            A productivity app with add, edit, delete, mark complete, and filter by status. Data persists using localStorage. Features include priority levels, due dates, color-coded categories, and a search function to find tasks quickly.
+                        </p>
+                        
+                        <!-- Technologies used -->
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                            <span class="tech-tag">DOM API</span>
+                        </div>
+                        
+                        <!-- Project links -->
+                        <div class="project-links">
+                            <a href="todo/index.html" class="project-link">
+                                <i class="fas fa-play"></i> Try It
+                            </a>
+                            <a href="https://github.com" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-images project-icon"></i>
+                    </div>
+                    
+                    <div class="project-body">
+                        <h3 class="project-title">Image Gallery</h3>
+                        
+                        <p class="project-description">
+                            An interactive image gallery with lightbox functionality, keyboard navigation, and smooth animations. Features include pagination, lazy loading, filter by category, and responsive grid layout that adapts to all screen sizes.
+                        </p>
+                        
+                        <!-- Technologies used -->
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        
+                        <!-- Project links -->
+                        <div class="project-links">
+                            <a href="gallery/index.html" class="project-link">
+                                <i class="fas fa-play"></i> Try It
+                            </a>
+                            <a href="https://github.com" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ========== PROJECTS SECTION END ========== -->
+    
+    
+    <!-- ========== CONTACT SECTION START ========== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <!-- Contact form -->
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <p class="contact-subtitle">
+                        Have a question or want to collaborate on a project? 
+                        Feel free to reach out! I'll get back to you as soon as possible.
+                    </p>
+                    
+                    <!-- Contact form -->
+                    <form class="contact-form" id="contactForm">
+                        <!-- Name input -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+                        
+                        <!-- Email input -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                        </div>
+                        
+                        <!-- Message textarea -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                placeholder="Write your message here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <!-- Submit button -->
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <!-- Success message (hidden by default) -->
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully. I'll get back to you soon!</p>
+                    </div>
+                </div>
+                
+                <!-- Contact info aside -->
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:soyabmanihar56@gmail.com">soyabmanihar56@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+917008727957">+91 7008727957</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bhawanipatna, Odisha, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== CONTACT SECTION END ========== -->
+    
+    
+    <!-- ========== FOOTER START ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer text -->
+            <p>&copy; 2026 Soyab Manihar. All rights reserved. | Built with HTML, CSS & JavaScript</p>
+            
+            <!-- Social media links -->
+            <div class="footer-socials">
+                <a href="https://github.com/soyab" target="_blank" class="footer-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/soyab" target="_blank" class="footer-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/soyabmanihar8/?__pwa=1#" target="_blank" class="footer-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+    
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
